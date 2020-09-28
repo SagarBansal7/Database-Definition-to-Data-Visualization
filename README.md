@@ -7,13 +7,13 @@ This was a group project from a course on Database and SQL. Below is the prompt 
 
 This project was carried out in three phases. In phase one, we developed an Entity Relationship Diagram, and Logical Database Model based on the client's new requirements ensuring all the logical entities and relationships are captured. In phase two, we cleaned and organized the MS Excel spreadsheets using filters and VLOOKUP features to align with our Logical Data Model. We also wrote SQL scripts to build the database system from the beginning and then populate it with the transformed data. In the final phase, we connected the database with Tableau and explored the client's data in order to answer questions and provide recommendations for improvements. 
 
-In this repository, I have created sub-folders with the final deliverables for each phase in them. Here's some information in brief about all the files included:
+In this repository, I have created sub-folders consisting of the final deliverables for each phase. Here's some information about all the files included:
 
 1) <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/tree/master/Phase%201">Phase 1</a>  
-  * <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%201/Business%20Requirements%20-%20Data%20Definition%20to%20Visualization.pdf">Business Requirements</a>
-  * <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%201/Entity%20Relationship%20Diagram%20-%20Data%20Definition%20to%20Visualization.pdf">Entity Relationship Diagram</a>
-2) <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/tree/master/Phase%202">Phase 2</a>
+    * <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%201/Business%20Requirements%20-%20Data%20Definition%20to%20Visualization.pdf">Business Requirements</a>
+    * <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%201/Entity%20Relationship%20Diagram%20-%20Data%20Definition%20to%20Visualization.pdf">Entity Relationship Diagram</a>
 
+2) <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/tree/master/Phase%202">Phase 2</a>
 *  <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%202/Logical%20Data%20Model%20-%20Data%20Definition%20to%20Visualization.pdf">Logical Data Model</a>
   *  <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%202/Phase%202%20Assumptions%20-%20%20Data%20Definition%20to%20Visualization.pdf">Phase 2 Assumptions</a>
   *  <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%202/Scrubbed%20Data%20-%20%20Data%20Definition%20to%20Visualization.xlsx">Scrubbed Data</a>
