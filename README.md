@@ -5,10 +5,15 @@ This was a group project from a course on Database and SQL. Below is the prompt 
 
 > Northern Lights Technical (NLT) School was founded in 1985 in Pittsfield, MA. It was the first computer software training business in the area and was immediately successful. Over the decade since its inception, NLT has grown steadily and is still the market leader in computer training in the Pittsfield area. The growth of the company has caused bookkeeping problems for the company who, up until the present, have kept all their business records in a series of MS Excel spreadsheets. To address the inadequacy of the current system we were asked to prepare a database system for NLT from the ground up.  In addition, we need to answer client's specific questions and make recommendations from our findings.
 
-This project was carried out in three phases. In phase one, we developed an Entity Relationship Diagram, and Logical Database Model based on the client's new requirements ensuring all the logical entities and relationships are captured. In phase two, we cleaned and organized the MS Excel spreadsheets using filters and VLOOKUP features based on our Logical Data Model. We also wrote SQL scripts to build the database system from the beginning and then populate it with the transformed data. In the final phase, we connected the database with Tableau and explored the client's data in order to answer questions and provide recommendations for improvements. 
+This project was carried out in three phases. In phase one, we developed an Entity Relationship Diagram, and Logical Database Model based on the client's new requirements ensuring all the logical entities and relationships are captured. In phase two, we cleaned and organized the MS Excel spreadsheets using filters and VLOOKUP features to align with our Logical Data Model. We also wrote SQL scripts to build the database system from the beginning and then populate it with the transformed data. In the final phase, we connected the database with Tableau and explored the client's data in order to answer questions and provide recommendations for improvements. 
 
-In this repositry, 
+In this repository, I have created sub-folders with the final deliverables for each phase in them. Here's some information in brief about all the files included:
 
+1) Phase 1
+2) Phase 2
+3) Phase 3
+
+https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization#graduate-course-database-management-and-sql-for-analytics
 
 <a href="https://public.tableau.com/profile/sagar8300#!/vizhome/Phase3-ClientSegment-Team7E_15939006760380/NorthernLightsTechnicalSchoolClientInsights">Please click here for Tableau work!</a>
 
