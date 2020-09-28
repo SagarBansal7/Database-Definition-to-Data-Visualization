@@ -51,14 +51,12 @@ employment_start_date Date,
 employment_end_date Date,
 constraint pk_trainer primary key (employee_number));
 
-
 create table hardware
 (hardware_id varchar2(30) not null,
 hardware_name varchar2(30),
 hardware_description varchar2(50),
 operating_system varchar2(30),
 constraint pk_hardware primary key (hardware_id));
-
 
 create table classroom
 (classroom_number varchar2(30) not null,
@@ -67,14 +65,12 @@ hardware_id varchar2(30) not null,
 constraint pk_classroom primary key (classroom_number ),
 constraint fk_classroom_hardware foreign key (hardware_id) references hardware (hardware_id));
 
-
 create table software
 (software_id varchar2(30) not null,
 software_name varchar2(30),
 software_publisher varchar2(30),
 number_of_licenses number(10,0),
 constraint pk_software primary key (software_id));
-
 
 create table hardware_software 
 (hardware_id varchar2(30) not null,
@@ -99,7 +95,6 @@ INSERT INTO TRAINER VALUES('200112155','Cleo','Ann','Patra','1210 Stearns Hill R
 INSERT INTO HARDWARE VALUES('MAC','Macintosh','Apple Macintosh','macOSX');
 INSERT INTO HARDWARE VALUES('PC','IBM','International Business Machines','Linux');
 
-
 INSERT INTO CLASSROOM VALUES('1a',5,'MAC');
 INSERT INTO CLASSROOM VALUES('1b',5,'MAC');
 INSERT INTO CLASSROOM VALUES('2a',5,'PC');
@@ -110,8 +105,6 @@ INSERT INTO CLASSROOM VALUES('5',15,'PC');
 INSERT INTO CLASSROOM VALUES('6',15,'PC');
 INSERT INTO CLASSROOM VALUES('7',15,'MAC');
 INSERT INTO CLASSROOM VALUES('8',10,'PC');
-
-
 
 INSERT INTO SOFTWARE VALUES('ADPHOT50','Adobe PhotoShop','Adobe',5);
 INSERT INTO SOFTWARE VALUES('APWORD01','Apache Word War','Apache',20);
@@ -128,7 +121,6 @@ INSERT INTO SOFTWARE VALUES('SNPFIR03','Snap Fire Photo','Snap Fire',25);
 INSERT INTO SOFTWARE VALUES('APMACOS7','Microsoft Access','Microsoft',5);
 INSERT INTO SOFTWARE VALUES('CPUNOW50','Adobe InDesign','Adobe',5);
 
-
 INSERT INTO HARDWARE_SOFTWARE VALUES('MAC','APWORD01');
 INSERT INTO HARDWARE_SOFTWARE VALUES('PC','MSEXPL00');
 INSERT INTO HARDWARE_SOFTWARE VALUES('PC','SUNJAVA4');
@@ -142,7 +134,6 @@ INSERT INTO HARDWARE_SOFTWARE VALUES('PC','CPUNOW50');
 INSERT INTO HARDWARE_SOFTWARE VALUES('PC','MSPAINT7');
 INSERT INTO HARDWARE_SOFTWARE VALUES('MAC','APMACOS7');
 INSERT INTO HARDWARE_SOFTWARE VALUES('PC','MSWIND00');
-
 
 --Query Scripts
 
@@ -182,5 +173,4 @@ and client.client_number in
 (select Client Number from MOST_VALUABLE_CLIENT where
 Total Enrollment Fees  (select AVG(Total Enrollment Fees) from MOST_VALUABLE_CLIENT))
 order by client.client_number;
-
 ````
