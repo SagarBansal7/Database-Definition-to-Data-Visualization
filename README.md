@@ -9,11 +9,22 @@ This project was carried out in three phases. In phase one, we developed an Enti
 
 In this repository, I have created sub-folders with the final deliverables for each phase in them. Here's some information in brief about all the files included:
 
-1) Phase 1
-2) Phase 2
-3) Phase 3
+1) <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/tree/master/Phase%201">Phase 1</a>  
+  * <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%201/Business%20Requirements%20-%20Data%20Definition%20to%20Visualization.pdf">Business Requirements</a>
+  * <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%201/Entity%20Relationship%20Diagram%20-%20Data%20Definition%20to%20Visualization.pdf">Entity Relationship Diagram</a>
+2) <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/tree/master/Phase%202">Phase 2</a>
 
-https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization#graduate-course-database-management-and-sql-for-analytics
+*  <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%202/Logical%20Data%20Model%20-%20Data%20Definition%20to%20Visualization.pdf">Logical Data Model</a>
+  *  <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%202/Phase%202%20Assumptions%20-%20%20Data%20Definition%20to%20Visualization.pdf">Phase 2 Assumptions</a>
+  *  <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%202/Scrubbed%20Data%20-%20%20Data%20Definition%20to%20Visualization.xlsx">Scrubbed Data</a>
+*  <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%202/SQL%20Scripts%20-%20Data%20Definition%20to%20Visualization.pdf">SQL Scripts</a>
+  *  <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%202/Populated%20Database%20Tables%20-%20Data%20Definition%20to%20Visualization.pdf">Populated Database Tables</a>
+
+3) <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/tree/master/Phase%203">Phase 3</a>
+  *  <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%203/Data%20Changes%20-%20Data%20Definition%20to%20Visualization.pdf">Data Changes</a>
+  *  <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%203/Phase%203%20SQL%20Scripts%20-%20Data%20Definition%20to%20Visualization.pdf">SQL Scripts</a>
+  *  <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%203/Query%20Results%20-%20Data%20Definition%20to%20Visualization.pdf">Query Results</a>
+  *  <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%203/Presentation%20-%20Data%20Definition%20to%20Visualization.pdf">Presentation</a>
 
 <a href="https://public.tableau.com/profile/sagar8300#!/vizhome/Phase3-ClientSegment-Team7E_15939006760380/NorthernLightsTechnicalSchoolClientInsights">Please click here for Tableau work!</a>
 
