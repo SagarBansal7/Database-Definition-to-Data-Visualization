@@ -32,20 +32,116 @@ In this repository, I have created sub-folders consisting of the final deliverab
 Following is a glimpse of the SQL script written for this project: 
 
 ````sql
-CREATE TABLE TRAINER
-(EMPLOYEE_NUMBER VARCHAR2(9) NOT NULL,
-FIRST_NAME VARCHAR2(25), 
-MIDDLE_NAME VARCHAR2(25),
-LAST_NAME VARCHAR2(25),
-STREET1 VARCHAR2(30),
-STREET2 VARCHAR2(30),
-CITY VARCHAR2(20),
-STATE VARCHAR2(2),
-ZIP VARCHAR2(9),
-EMPLOYEE_PHONE_NUMBER VARCHAR2(12),
-EMAIL_ADDRESS VARCHAR2(50),
-EMPLOYMENT_START_DATE DATE,
-EMPLOYMENT_END_DATE DATE,
-CONSTRAINT TRAINER_PK1 PRIMARY KEY (EMPLOYEE_NUMBER));
+
+-- Create Scripts
+
+create table trainer
+(employee_number varchar2(30) not null,
+first_name varchar2(10) not null,
+middle_name varchar2(15),
+last_name varchar2(15),
+Street1 varchar2(30),
+Street2 varchar2(15),
+City varchar2(15),
+State varchar2(2),
+Zip varchar2(5),
+employee_phone_number varchar2(15),
+email_address varchar2(15),
+employment_start_date Date,
+employment_end_date Date,
+constraint pk_trainer primary key (employee_number));
+
+
+create table hardware
+(hardware_id varchar2(30) not null,
+hardware_name varchar2(30),
+hardware_description varchar2(50),
+operating_system varchar2(30),
+constraint pk_hardware primary key (hardware_id));
+
+
+create table classroom
+(classroom_number varchar2(30) not null,
+classroom_capacity number(10,0),
+hardware_id varchar2(30) not null,
+constraint pk_classroom primary key (classroom_number ),
+constraint fk_classroom_hardware foreign key (hardware_id) references hardware (hardware_id));
+
+
+create table software
+(software_id varchar2(30) not null,
+software_name varchar2(30),
+software_publisher varchar2(30),
+number_of_licenses number(10,0),
+constraint pk_software primary key (software_id));
+
+
+create table hardware_software 
+(hardware_id varchar2(30) not null,
+software_id varchar2(30) not null, 
+constraint pk_hardware_software primary key (hardware_id,software_id),
+constraint fk_hardware_software1 foreign key (hardware_id) references hardware(hardware_id),
+constraint fk_hardware_software2 foreign key (software_id) references software(software_id));
+
+--Insert Data Scripts
+
+INSERT INTO TRAINER VALUES('199111011','Bill','Henry','Williams','1288 Stearns Hill Rd','APT1','Waltham','MA','02451','857-272-7266','BW12@gmail.com','1-OCT-1985','');
+INSERT INTO TRAINER VALUES('199712151','Brian','Matthew','Adams','1230 Stearns Hill Rd','APT2','Waltham','MA','02451','857-272-7267','BA12@gmail.com','14-MAR-2014','');
+INSERT INTO TRAINER VALUES('199905101','Jack','Scott','Wagner','1422 Stearns Hill Rd','APT3c','Waltham','MA','02451','857-272-7268','JW12@gmail.com','21-APR-2016','');
+INSERT INTO TRAINER VALUES('199905102','Jill','Marie','Pensing','1430 Stearns Hill Rd','APT5','Waltham','MA','02451','857-272-7269','JP12@gmail.com','11-NOV-2016','');
+INSERT INTO TRAINER VALUES('200001141','Chuck','David','Black','7628 Stearns Hill Rd','APT6','Waltham','MA','02451','857-272-7270','CB12@gmail.com','16-NOV-2016','');
+INSERT INTO TRAINER VALUES('200006121','Tim','Jackson','Heberle','4412 Stearns Hill Rd','APT9','Waltham','MA','02451','857-272-7271','TH12@gmail.com','23-FEB-2017','');
+INSERT INTO TRAINER VALUES('200009291','Bob','William','Bertig','4413 Stearns Hill Rd','APT1','Waltham','MA','02451','857-272-7272','BB12@gmail.com','26-MAR-2017','04-NOV-2019');
+INSERT INTO TRAINER VALUES('200111011','Debbie','Louise','Beverly','1292 Stearns Hill Rd','APT2','Waltham','MA','02451','857-272-7273','DB12@gmail.com','11-MAY-2018','');
+INSERT INTO TRAINER VALUES('200111051','Tammy','Megan','Locum','1298 Stearns Hill Rd','APT1c','Waltham','MA','02451','857-272-7274','TL12@gmail.com','12-JUN-2019','');
+INSERT INTO TRAINER VALUES('200112041','Joan','Elizabeth','Wendel','1293 Stearns Hill Rd','APT1b','Waltham','MA','02451','857-272-7275','JW12@gmail.com','1-NOV-2019','');
+INSERT INTO TRAINER VALUES('200112155','Cleo','Ann','Patra','1210 Stearns Hill Rd','APT5','Waltham','MA','02451','857-272-7276','CP12@gmail.com','05-NOV-2019','');
+INSERT INTO HARDWARE VALUES('MAC','Macintosh','Apple Macintosh','macOSX');
+INSERT INTO HARDWARE VALUES('PC','IBM','International Business Machines','Linux');
+
+
+INSERT INTO CLASSROOM VALUES('1a',5,'MAC');
+INSERT INTO CLASSROOM VALUES('1b',5,'MAC');
+INSERT INTO CLASSROOM VALUES('2a',5,'PC');
+INSERT INTO CLASSROOM VALUES('2b',5,'PC');
+INSERT INTO CLASSROOM VALUES('3',5,'MAC');
+INSERT INTO CLASSROOM VALUES('4',5,'PC');
+INSERT INTO CLASSROOM VALUES('5',15,'PC');
+INSERT INTO CLASSROOM VALUES('6',15,'PC');
+INSERT INTO CLASSROOM VALUES('7',15,'MAC');
+INSERT INTO CLASSROOM VALUES('8',10,'PC');
+
+
+
+INSERT INTO SOFTWARE VALUES('ADPHOT50','Adobe PhotoShop','Adobe',5);
+INSERT INTO SOFTWARE VALUES('APWORD01','Apache Word War','Apache',20);
+INSERT INTO SOFTWARE VALUES('MSACCS00','Microsoft Access 07','Microsoft',5);
+INSERT INTO SOFTWARE VALUES('MSEXCL00','Microsoft Excel 03','Microsoft',35);
+INSERT INTO SOFTWARE VALUES('MSEXPL00','Microsoft Excel 07','Microsoft',5);
+INSERT INTO SOFTWARE VALUES('MSPAINT7','Microsoft Paint','Microsoft',15);
+INSERT INTO SOFTWARE VALUES('MSPWRP00','Microsoft PowerPOint 07','Microsoft',5);
+INSERT INTO SOFTWARE VALUES('MSWIND00','Microsoft Windows','Microsoft',5);
+INSERT INTO SOFTWARE VALUES('MSWORD00','Microsoft Word 07','Microsoft',12);
+INSERT INTO SOFTWARE VALUES('NVNETW60','Novell Netware 6.0','novell',5);
+INSERT INTO SOFTWARE VALUES('SUNJAVA4','Sun Java 5.0','Sun',5);
+INSERT INTO SOFTWARE VALUES('SNPFIR03','Snap Fire Photo','Snap Fire',25);
+INSERT INTO SOFTWARE VALUES('APMACOS7','Microsoft Access','Microsoft',5);
+INSERT INTO SOFTWARE VALUES('CPUNOW50','Adobe InDesign','Adobe',5);
+
+
+INSERT INTO HARDWARE_SOFTWARE VALUES('MAC','APWORD01');
+INSERT INTO HARDWARE_SOFTWARE VALUES('PC','MSEXPL00');
+INSERT INTO HARDWARE_SOFTWARE VALUES('PC','SUNJAVA4');
+INSERT INTO HARDWARE_SOFTWARE VALUES('PC','MSACCS00');
+INSERT INTO HARDWARE_SOFTWARE VALUES('PC','MSEXCL00');
+INSERT INTO HARDWARE_SOFTWARE VALUES('PC','MSPWRP00');
+INSERT INTO HARDWARE_SOFTWARE VALUES('PC','MSWORD00');
+INSERT INTO HARDWARE_SOFTWARE VALUES('PC','NVNETW60');
+INSERT INTO HARDWARE_SOFTWARE VALUES('MAC','ADPHOT50');
+INSERT INTO HARDWARE_SOFTWARE VALUES('PC','CPUNOW50');
+INSERT INTO HARDWARE_SOFTWARE VALUES('PC','MSPAINT7');
+INSERT INTO HARDWARE_SOFTWARE VALUES('MAC','APMACOS7');
+INSERT INTO HARDWARE_SOFTWARE VALUES('PC','MSWIND00');
+
 
 ````
