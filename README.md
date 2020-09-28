@@ -144,4 +144,43 @@ INSERT INTO HARDWARE_SOFTWARE VALUES('MAC','APMACOS7');
 INSERT INTO HARDWARE_SOFTWARE VALUES('PC','MSWIND00');
 
 
+--Query Scripts
+
+CREATE VIEW Q1A AS 
+select distinct 
+membership_purchase.client_number, count(membership_purchase_id) CountMemberships, sum(membership_payment) SumMembershipPmts
+from membership_purchase
+group by membership_purchase.client_number
+order by membership_purchase.client_number;
+
+CREATE VIEW Q1B AS
+select distinct 
+enrollment_request.client_number, count(reference_number) CoursesEnrolled, sum(payment) CoursePayment
+from enrollment_request
+where enrollment_request.status = 'e'
+group by enrollment_request.client_number
+order by enrollment_request.client_number;
+ 
+CREATE VIEW MOST_VALUABLE_CLIENT AS
+select distinct 
+client.client_number Client Number, client.first_name Client Name, coalesce(q1a.countmemberships, 0) Membership Count, coalesce(q1a.summembershippmts, 0) Total Membership Payments, coalesce(q1b.coursesenrolled, 0) Total Courses Enrolled, coalesce(q1b.coursepayment, 0) Total Enrollment Fees
+from client, q1a, q1b
+where q1a.client_number (+) = client.client_number
+and q1b.client_number (+) = client.client_number
+order by client.client_number;
+
+CREATE VIEW MEMBERSHIPSFORTOPCLIENTS AS 
+select 
+first_name Client Name,
+client.client_number Client Number,
+membership_code Membership Category,
+date_of_assignment as Membership Start Date,
+date_of_assignment+365 as Membership End Date
+from client, membership_purchase
+where client.client_number = membership_purchase.client_number
+and client.client_number in 
+(select Client Number from MOST_VALUABLE_CLIENT where
+Total Enrollment Fees  (select AVG(Total Enrollment Fees) from MOST_VALUABLE_CLIENT))
+order by client.client_number;
+
 ````
