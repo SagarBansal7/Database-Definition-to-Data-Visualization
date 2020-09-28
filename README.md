@@ -18,6 +18,7 @@ In this repository, I have created sub-folders consisting of the final deliverab
     *  <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%202/Phase%202%20Assumptions%20-%20%20Data%20Definition%20to%20Visualization.pdf">Phase 2 Assumptions</a> - Our assumptions about data while constructing and populating the database.
     *  <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%202/Scrubbed%20Data%20-%20%20Data%20Definition%20to%20Visualization.xlsx">Scrubbed Data</a> - Transformed data that was used to populate the database.
     *  <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%202/SQL%20Scripts%20-%20Data%20Definition%20to%20Visualization.pdf">SQL Scripts</a> - Scripts to build and populate the database.  
+    *  <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%202/SQL%20Scripts%20(.sql)%20-%20Data%20Definition%20to%20Visualization.sql">SQL Scripts (.sql)</a> - Scripts in .sql format to build and populate the database.  
     *  <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%202/Populated%20Database%20Tables%20-%20Data%20Definition%20to%20Visualization.pdf">Populated Database Tables</a> - Final Tables after we populated them with the scrubbed data.
 
 3) <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/tree/master/Phase%203">Phase 3</a>
