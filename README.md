@@ -29,6 +29,7 @@ In this repository, I have created sub-folders consisting of the final deliverab
     *  <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%203/Presentation%20-%20Data%20Definition%20to%20Visualization.pdf">Presentation</a> - Final Presentation.
     *  <a href="https://public.tableau.com/profile/sagar8300#!/vizhome/Phase3-ClientSegment-Team7E_15939006760380/NorthernLightsTechnicalSchoolClientInsights">Please click here for Tableau work!</a> - Results received after exploring the data through Tableau. Check this out!
 
+Following is a glimpse of the SQL script written for this project: 
 
 ````sql
 CREATE TABLE TRAINER
