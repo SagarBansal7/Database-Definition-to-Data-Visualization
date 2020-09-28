@@ -10,7 +10,7 @@ This project was carried out in three phases. In phase one, we developed an Enti
 In this repository, I have created sub-folders consisting of the final deliverables for each phase. Here's some information about all the files included:
 
 1) <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/tree/master/Phase%201">Phase 1</a>  
-    * <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%201/Business%20Requirements%20-%20Data%20Definition%20to%20Visualization.pdf">Business Requirements</a> - All the information that we recieved from the client. 
+    * <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%201/Business%20Requirements%20-%20Data%20Definition%20to%20Visualization.pdf">Business Requirements</a> - All the information that we received from the client. 
     * <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/blob/master/Phase%201/Entity%20Relationship%20Diagram%20-%20Data%20Definition%20to%20Visualization.pdf">Entity Relationship Diagram</a> - Final diagram with all the business entities and relationships between them.
 
 2) <a href="https://github.com/SagarBansal7/Database-Definition-to-Data-Visualization/tree/master/Phase%202">Phase 2</a>
